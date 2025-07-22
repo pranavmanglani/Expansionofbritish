@@ -1,190 +1,79 @@
 import streamlit as st
 
-#Set page config
+st.set_page_config(page_title="British Expansion in India", layout="centered") st.title("📚 British Expansion in India (1600 - 1856)")
 
-st.set_page_config(page_title="British Expansion in India", layout="wide")
+st.header("📌 1. East India Company Begins Trade") st.markdown("""
 
-st.title("🇮🇳 Expansion of British Power in India") 
-st.markdown(""" This interactive app covers key topics like:
+In 1600, Queen Elizabeth gave permission to the East India Company to trade with the East.
 
-British Strategic Policies
+The company aimed to buy spices from the East and sell them in England.
 
-Subsidiary Alliance
+In 1608, the company arrived in Surat and set up its first trading center. """)
 
-Anglo-Maratha Wars
 
-Doctrine of Lapse
+st.header("⚔️ 2. Conflicts with Indian Rulers") st.markdown("""
 
-Annexation of Awadh
+British faced resistance from Indian rulers like the Mughals, Marathas, and Mysore kings.
 
-Dalhousie’s Policy of Expansion
+Important battles:
 
-Subjugation of Mysore
+Battle of Plassey (1757): British defeated Siraj-ud-Daulah and gained control of Bengal.
 
-Annexation of the Sikh Kingdom
+Battle of Buxar (1764): British defeated combined armies of Bengal, Awadh, and the Mughals. """)
 
-India in 1856
 
 
+st.header("🏰 3. Expansion Policies") st.markdown("""
 
----
+Subsidiary Alliance by Lord Wellesley:
 
-""")
+Indian rulers had to keep British troops and pay for them.
 
-Sidebar Navigation
+Example: Hyderabad, Awadh, Mysore.
 
-section = st.sidebar.radio("Jump to Section", [ "British Strategic Policies", "Subsidiary Alliance", "Anglo-Maratha Wars", "Doctrine of Lapse", "Annexation of Awadh", "Subjugation of Mysore", "Annexation of the Sikh Kingdom", "Dalhousie’s Policy of Expansion", "India in 1856", "Quiz: Test Your Knowledge" ])
 
-if section == "British Strategic Policies": st.header("British Strategic Policies") st.markdown("""
+Doctrine of Lapse by Lord Dalhousie:
 
-Started as traders, later aimed for power.
+If a ruler died without a male heir, his kingdom was annexed.
 
-Used policies to avoid expensive wars.
+Example: Satara, Jhansi, Nagpur. """)
 
-Two-pronged strategy:
 
-1. Peaceful annexation
 
+st.header("🔁 4. Annexations by Force and Diplomacy") st.markdown("""
 
-2. Military conquest
+British used force, treaties, and clever politics to take over kingdoms.
 
+Example: Punjab was annexed after defeating the Sikhs in 1849.
 
+Awadh was annexed in 1856 on the grounds of misrule. """)
 
-Also annexed under pretexts like maladministration. """)
 
+st.header("🏆 5. Causes of British Success") st.markdown("""
 
-elif section == "Subsidiary Alliance": st.header("Subsidiary Alliance (by Lord Wellesley)") st.subheader("Terms") st.markdown("""
+Superior weapons and army discipline.
 
-British troops stationed in Indian territory.
+Divide-and-rule policy: Used Indian rulers against each other.
 
-Indian rulers paid for them.
+Lack of unity among Indian kings.
 
-British Resident placed in courts.
+Advanced communication (postal, telegraph) and transport (railways). """)
 
-Rulers couldn't ally or go to war without permission. """) st.subheader("Effects") col1, col2 = st.columns(2) with col1: st.markdown("Advantages for British") 
-st.markdown(""" - Large armies without own expenses - More territories and resources - Foreign rivals excluded - Controlled Indian foreign policy """) with col2: st.markdown("Disadvantages for Indians") st.markdown(""" - Loss of independence - Drained resources - People suffered under neglectful rulers - Helped subjugate Marathas """)
 
+st.header("🗺️ 6. India in 1856") st.markdown("""
 
-elif section == "Anglo-Maratha Wars": st.header("Anglo-Maratha Wars") st.subheader("1st War (1775–82)") st.markdown("""
+By 1856, major Indian territories were under British rule.
 
-Cause: Civil war over succession (Madhav Rao II vs Raghunath Rao)
+Some princely states existed but under British control.
 
-Result: Treaty of Salbai (peace for 20 years) """) st.subheader("2nd War (1803–05)") st.markdown("""
+The annexation of Awadh angered many Indians and became a major reason for the Revolt of 1857. """)
 
-Cause: Death of Madhav Rao II, internal rivalry
 
-Result: British victory, Sindhia & Bhonsle accepted Subsidiary Alliance """) st.subheader("3rd War (1817–18)") st.markdown("""
+st.header("📝 Quiz: Test Your Knowledge") questions = { "When did the East India Company arrive in Surat?": ["1608", "1757", "1764", "1856"], "What policy did Lord Dalhousie implement?": ["Doctrine of Lapse", "Subsidiary Alliance", "Divide and Rule", "None"], "Which state was annexed due to misrule in 1856?": ["Awadh", "Punjab", "Jhansi", "Hyderabad"], }
 
-Cause: Peshwa Baji Rao II resisted British control
+score = 0 for q, options in questions.items(): user_answer = st.radio(q, options, key=q) if (q == "When did the East India Company arrive in Surat?" and user_answer == "1608") or 
+(q == "What policy did Lord Dalhousie implement?" and user_answer == "Doctrine of Lapse") or 
+(q == "Which state was annexed due to misrule in 1856?" and user_answer == "Awadh"): score += 1
 
-Result: British victory, Peshwa deposed, Maratha power ended """)
-
-
-elif section == "Doctrine of Lapse": st.header("Doctrine of Lapse (by Lord Dalhousie)") st.markdown("""
-
-States with no natural male heir would be annexed.
-
-Rulers could not adopt sons without British permission.
-
-States affected: Satara, Jhansi, Nagpur
-
-Led to widespread resentment and contributed to 1857 Revolt """)
-
-
-elif section == "Annexation of Awadh": st.header("Annexation of Awadh") st.markdown("""
-
-Nawab protected under Subsidiary Alliance
-
-Later annexed on grounds of maladministration
-
-Treasury drained, ruler incompetent
-
-People deeply resented annexation — key centre of 1857 Revolt """)
-
-
-elif section == "Subjugation of Mysore": st.header("Subjugation of Mysore") st.markdown("""
-
-Ruled by Hyder Ali and his son Tipu Sultan
-
-Both were efficient and strong rulers
-
-British fought four wars with Mysore
-
-Tipu Sultan died in 4th Anglo-Mysore War (1799), Mysore annexed """)
-
-
-elif section == "Annexation of the Sikh Kingdom": st.header("Annexation of the Sikh Kingdom") st.markdown("""
-
-Strong state under Ranjit Singh
-
-After his death, power struggles weakened the kingdom
-
-British fought two wars (1845–49)
-
-Annexed Punjab after Second Anglo-Sikh War """)
-
-
-elif section == "Dalhousie’s Policy of Expansion": st.header("Dalhousie’s Policy of Expansion") st.markdown("""
-
-Used:
-
-1. War (Punjab)
-
-
-2. Doctrine of Lapse (Satara, Jhansi, Nagpur)
-
-
-3. Maladministration (Awadh)
-
-
-
-Aim: Build a complete British empire in India """)
-
-
-elif section == "India in 1856": st.header("India in 1856") st.markdown("""
-
-Most of India was under British control
-
-Remaining Indian rulers had only nominal power
-
-Factors for British success:
-
-Disunity among Indian rulers
-
-Weak administration
-
-British military, economic, and naval strength """)
-
-
-
-elif section == "Quiz: Test Your Knowledge": st.header("🧠 Quiz: Test Your Knowledge") score = 0
-
-q1 = st.radio("1. Who introduced the Subsidiary Alliance?", ["Lord Dalhousie", "Lord Wellesley", "Warren Hastings"])
-if q1 == "Lord Wellesley": score += 1
-
-q2 = st.radio("2. Which war ended Maratha power?", ["First Anglo-Maratha War", "Second Anglo-Maratha War", "Third Anglo-Maratha War"])
-if q2 == "Third Anglo-Maratha War": score += 1
-
-q3 = st.radio("3. Doctrine of Lapse was introduced by?", ["Lord Dalhousie", "Lord Wellesley", "Lord Cornwallis"])
-if q3 == "Lord Dalhousie": score += 1
-
-q4 = st.radio("4. Which state was annexed on the grounds of maladministration?", ["Nagpur", "Awadh", "Jhansi"])
-if q4 == "Awadh": score += 1
-
-q5 = st.radio("5. Who fought bravely in the Anglo-Sikh Wars?", ["Ranjit Singh", "The Sikhs", "Hyder Ali"])
-if q5 == "The Sikhs": score += 1
-
-q6 = st.radio("6. Which ruler died in the Fourth Anglo-Mysore War?", ["Hyder Ali", "Tipu Sultan", "Baji Rao II"])
-if q6 == "Tipu Sultan": score += 1
-
-q7 = st.radio("7. What was a result of the Treaty of Salbai?", ["Peace with Marathas", "Start of rebellion", "Dalhousie became Governor"])
-if q7 == "Peace with Marathas": score += 1
-
-st.markdown(f"### ✅ Your Score: {score}/7")
-if score == 7:
-    st.success("Excellent! You’ve mastered this topic.")
-elif score >= 5:
-    st.info("Good job! Review a few points for perfection.")
-else:
-    st.warning("You might want to revisit some sections.")
+if st.button("Submit Quiz"): st.success(f"You scored {score}/3! 🎉") if score == 3: st.balloons() elif score == 0: st.error("Try again! You can do it! 💪")
 
