@@ -83,6 +83,14 @@ st.header("📝 Quiz: Test Your Knowledge")
 
 questions = { "When did the East India Company arrive in Surat?": ["1608", "1757", "1764", "1856"], "What policy did Lord Dalhousie implement?": ["Doctrine of Lapse", "Subsidiary Alliance", "Divide and Rule", "None"], "Which state was annexed due to misrule in 1856?": ["Awadh", "Punjab", "Jhansi", "Hyderabad"], }
 
+correct_answers = {
+    "Who introduced the Doctrine of Lapse?": "Lord Dalhousie",
+    "Which battle marked the beginning of British rule in India?": "Battle of Plassey",
+    "What was the main cause of the First Anglo-Maratha War?": "Raghunath Rao’s appeal for British support"
+}
+
+
+
 score = 0
 for q, options in questions.items():
     st.write(f"**{q}**")
