@@ -79,7 +79,9 @@ Some princely states existed but under British control.
 The annexation of Awadh angered many Indians and became a major reason for the Revolt of 1857. """)
 
 
-st.header("📝 Quiz: Test Your Knowledge") questions = { "When did the East India Company arrive in Surat?": ["1608", "1757", "1764", "1856"], "What policy did Lord Dalhousie implement?": ["Doctrine of Lapse", "Subsidiary Alliance", "Divide and Rule", "None"], "Which state was annexed due to misrule in 1856?": ["Awadh", "Punjab", "Jhansi", "Hyderabad"], }
+st.header("📝 Quiz: Test Your Knowledge") 
+
+questions = { "When did the East India Company arrive in Surat?": ["1608", "1757", "1764", "1856"], "What policy did Lord Dalhousie implement?": ["Doctrine of Lapse", "Subsidiary Alliance", "Divide and Rule", "None"], "Which state was annexed due to misrule in 1856?": ["Awadh", "Punjab", "Jhansi", "Hyderabad"], }
 
 score = 0 for q, options in questions.items(): user_answer = st.radio(q, options, key=q) if (q == "When did the East India Company arrive in Surat?" and user_answer == "1608") or 
 (q == "What policy did Lord Dalhousie implement?" and user_answer == "Doctrine of Lapse") or 
