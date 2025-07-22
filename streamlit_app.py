@@ -1,6 +1,6 @@
 import streamlit as st
 
-Set page config
+#Set page config
 
 st.set_page_config(page_title="British Expansion in India", layout="wide")
 
