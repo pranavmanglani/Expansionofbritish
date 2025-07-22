@@ -4,7 +4,8 @@ import streamlit as st
 
 st.set_page_config(page_title="British Expansion in India", layout="wide")
 
-st.title("🇮🇳 Expansion of British Power in India") st.markdown(""" This interactive app covers key topics like:
+st.title("🇮🇳 Expansion of British Power in India") 
+st.markdown(""" This interactive app covers key topics like:
 
 British Strategic Policies
 
@@ -60,7 +61,8 @@ Indian rulers paid for them.
 
 British Resident placed in courts.
 
-Rulers couldn't ally or go to war without permission. """) st.subheader("Effects") col1, col2 = st.columns(2) with col1: st.markdown("Advantages for British") st.markdown(""" - Large armies without own expenses - More territories and resources - Foreign rivals excluded - Controlled Indian foreign policy """) with col2: st.markdown("Disadvantages for Indians") st.markdown(""" - Loss of independence - Drained resources - People suffered under neglectful rulers - Helped subjugate Marathas """)
+Rulers couldn't ally or go to war without permission. """) st.subheader("Effects") col1, col2 = st.columns(2) with col1: st.markdown("Advantages for British") 
+st.markdown(""" - Large armies without own expenses - More territories and resources - Foreign rivals excluded - Controlled Indian foreign policy """) with col2: st.markdown("Disadvantages for Indians") st.markdown(""" - Loss of independence - Drained resources - People suffered under neglectful rulers - Helped subjugate Marathas """)
 
 
 elif section == "Anglo-Maratha Wars": st.header("Anglo-Maratha Wars") st.subheader("1st War (1775–82)") st.markdown("""
