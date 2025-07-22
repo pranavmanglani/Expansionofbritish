@@ -55,7 +55,9 @@ Example: Punjab was annexed after defeating the Sikhs in 1849.
 Awadh was annexed in 1856 on the grounds of misrule. """)
 
 
-st.header("🏆 5. Causes of British Success") st.markdown("""
+st.header("🏆 5. Causes of British Success") 
+
+st.markdown("""
 
 Superior weapons and army discipline.
 
@@ -66,7 +68,9 @@ Lack of unity among Indian kings.
 Advanced communication (postal, telegraph) and transport (railways). """)
 
 
-st.header("🗺️ 6. India in 1856") st.markdown("""
+st.header("🗺️ 6. India in 1856")
+
+st.markdown("""
 
 By 1856, major Indian territories were under British rule.
 
@@ -81,5 +85,11 @@ score = 0 for q, options in questions.items(): user_answer = st.radio(q, options
 (q == "What policy did Lord Dalhousie implement?" and user_answer == "Doctrine of Lapse") or 
 (q == "Which state was annexed due to misrule in 1856?" and user_answer == "Awadh"): score += 1
 
-if st.button("Submit Quiz"): st.success(f"You scored {score}/3! 🎉") if score == 3: st.balloons() elif score == 0: st.error("Try again! You can do it! 💪")
+if st.button("Submit Quiz"):
+
+st.success(f"You scored {score}/3! 🎉") if score == 3: 
+
+st.balloons() elif score == 0:
+
+st.error("Try again! You can do it! 💪")
 
