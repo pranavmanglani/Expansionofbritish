@@ -2,7 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title="British Expansion in India", layout="centered") st.title("📚 British Expansion in India (1600 - 1856)")
 
-st.header("📌 1. East India Company Begins Trade") st.markdown("""
+st.header("📌 1. East India Company Begins Trade") 
+st.markdown("""
 
 In 1600, Queen Elizabeth gave permission to the East India Company to trade with the East.
 
