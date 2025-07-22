@@ -44,7 +44,9 @@ Example: Satara, Jhansi, Nagpur. """)
 
 
 
-st.header("🔁 4. Annexations by Force and Diplomacy") st.markdown("""
+st.header("🔁 4. Annexations by Force and Diplomacy")
+
+st.markdown("""
 
 British used force, treaties, and clever politics to take over kingdoms.
 
