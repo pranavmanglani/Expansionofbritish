@@ -81,12 +81,26 @@ The annexation of Awadh angered many Indians and became a major reason for the R
 
 st.header("📝 Quiz: Test Your Knowledge") 
 
-questions = { "When did the East India Company arrive in Surat?": ["1608", "1757", "1764", "1856"], "What policy did Lord Dalhousie implement?": ["Doctrine of Lapse", "Subsidiary Alliance", "Divide and Rule", "None"], "Which state was annexed due to misrule in 1856?": ["Awadh", "Punjab", "Jhansi", "Hyderabad"], }
+questions = {
+    "Who introduced the Doctrine of Lapse?": [
+        "Lord Dalhousie", "Lord Wellesley", "Lord Hastings", "Lord Canning"
+    ],
+    "Which battle marked the beginning of British rule in India?": [
+        "Battle of Plassey", "Battle of Buxar", "Battle of Panipat", "Battle of Haldighati"
+    ],
+    "What was the main cause of the First Anglo-Maratha War?": [
+        "Raghunath Rao’s appeal for British support", "Doctrinal expansion", "Economic interest", "Religious conflict"
+    ],
+    "When did the East India Company gain Diwani rights?": [
+        "1765", "1757", "1857", "1773"
+    ]
+}
 
 correct_answers = {
     "Who introduced the Doctrine of Lapse?": "Lord Dalhousie",
     "Which battle marked the beginning of British rule in India?": "Battle of Plassey",
-    "What was the main cause of the First Anglo-Maratha War?": "Raghunath Rao’s appeal for British support"
+    "What was the main cause of the First Anglo-Maratha War?": "Raghunath Rao’s appeal for British support",
+    "When did the East India Company gain Diwani rights?": "1765"
 }
 
 
