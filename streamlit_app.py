@@ -97,7 +97,8 @@ if st.button("Submit Quiz"):
 
 if score == 3: 
 
-   st.balloons() elif score == 0:
-else:
-st.error("Try again! You can do it! 💪")
+   st.balloons() 
+elif score == 0:
+
+  st.error("Try again! You can do it! 💪")
 
