@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.set_page_config(page_title="British Expansion in India", layout="centered") st.title("📚 British Expansion in India (1600 - 1856)")
+st.set_page_config(page_title="British Expansion in India", layout="centered") 
+st.title("📚 British Expansion in India (1600 - 1856)")
 
 st.header("📌 1. East India Company Begins Trade") 
 st.markdown("""
@@ -12,7 +13,8 @@ The company aimed to buy spices from the East and sell them in England.
 In 1608, the company arrived in Surat and set up its first trading center. """)
 
 
-st.header("⚔️ 2. Conflicts with Indian Rulers") st.markdown("""
+st.header("⚔️ 2. Conflicts with Indian Rulers") 
+st.markdown("""
 
 British faced resistance from Indian rulers like the Mughals, Marathas, and Mysore kings.
 
@@ -24,7 +26,8 @@ Battle of Buxar (1764): British defeated combined armies of Bengal, Awadh, and t
 
 
 
-st.header("🏰 3. Expansion Policies") st.markdown("""
+st.header("🏰 3. Expansion Policies") 
+st.markdown("""
 
 Subsidiary Alliance by Lord Wellesley:
 
