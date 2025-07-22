@@ -93,9 +93,11 @@ st.success(f"Your score: {score}/{len(questions)}")
 
 if st.button("Submit Quiz"):
 
-st.success(f"You scored {score}/3! 🎉") if score == 3: 
+   st.success(f"You scored {score}/3! 🎉")
 
-st.balloons() elif score == 0:
+if score == 3: 
 
+   st.balloons() elif score == 0:
+else:
 st.error("Try again! You can do it! 💪")
 
