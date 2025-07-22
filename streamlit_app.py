@@ -83,9 +83,13 @@ st.header("📝 Quiz: Test Your Knowledge")
 
 questions = { "When did the East India Company arrive in Surat?": ["1608", "1757", "1764", "1856"], "What policy did Lord Dalhousie implement?": ["Doctrine of Lapse", "Subsidiary Alliance", "Divide and Rule", "None"], "Which state was annexed due to misrule in 1856?": ["Awadh", "Punjab", "Jhansi", "Hyderabad"], }
 
-score = 0 for q, options in questions.items(): user_answer = st.radio(q, options, key=q) if (q == "When did the East India Company arrive in Surat?" and user_answer == "1608") or 
-(q == "What policy did Lord Dalhousie implement?" and user_answer == "Doctrine of Lapse") or 
-(q == "Which state was annexed due to misrule in 1856?" and user_answer == "Awadh"): score += 1
+score = 0
+for q, options in questions.items():
+    st.write(f"**{q}**")
+    user_answer = st.radio("Choose one:", options, key=q)
+    if user_answer == correct_answers[q]:
+        score += 1
+st.success(f"Your score: {score}/{len(questions)}")
 
 if st.button("Submit Quiz"):
 
